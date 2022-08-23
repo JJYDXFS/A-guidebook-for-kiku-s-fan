@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>关于小鞠的二三事</title>
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<script language="javascript">
+
+function ChangeBgm(){
+	var bgsound=document.getElementById("bgm");
+	if(bgsound.paused)
+		bgsound.play();
+	else
+		bgsound.pause();
+
+}	
+function letter(){
+	var tdiv=document.getElementById('tips');
+	var ldiv=document.getElementById('letter');
+	tdiv.style.display='none';
+	ldiv.style.display='block';
+	document.getElementById('letter').scrollIntoView();
+}
+	
+</script>
+</head>
+
+<body>
+<audio src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/music/other_bgsound.mp3" id="bgm" autoplay></audio>
+
+	<section>
+		<div class="head">
+			<div class="headson1">
+				<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/关于小鞠的二三事.png">
+			</div>
+			<div class="headson3">
+				<a href="index.html" title="鞠骑入坑指南">回到首页&nbsp;|&nbsp;</a>
+				<a href="introduction.html" title="关于小鞠的个人简介">简介&nbsp;|&nbsp;</a>
+				<a href="sing.html" title="一起来听歌叭~">歌姬&nbsp;|&nbsp;</a>
+				<a href="dance.html" title="全能ACE怎么能不会跳舞？">舞者&nbsp;|&nbsp;</a>
+				
+			</div>
+		</div>
+	<div class="fixed">
+			<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/喇叭.png" width="35%" onclick="ChangeBgm();" title="单击以关闭/打开背景音乐">
+		</div>	
+		<div>
+			<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/tips.png" width="100%">
+		</div>
+	</section>
+	<div id="father" align="center">
+		<div id="tips" style="display: block">
+			<a href="https://weibo.com/tv/v/GEP8foewe?fid=1034:4297296721194484" target="_blank"><img src="image/小鞠和哈猪.png" width="50%"></a>
+			<a href="https://weibo.com/tv/v/GFpyvwxd3?fid=1034:4298696846718391" target="_blank"><img src="image/会弹钢琴.png" width="50%" class="float2"></a>
+			<a href="https://weibo.com/tv/v/GBby698Lz?fid=1034:4288625282590091" target="_blank"><img src="image/小提琴.png" width="50%"></a>
+			<a href="https://weibo.com/tv/v/GzuoKFMIA?fid=1034:4284583299200682" target="_blank"><img src="image/古筝.png" width="50%" class="float2"></a>
+			<a href="https://weibo.com/tv/v/GFxSmlN81?fid=1034:4299016683638412" target="_blank"><img src="image/琵琶.png" width="50%"></a>
+			<a href="https://weibo.com/tv/v/7600726a451f29b46d39690fd92fc571?fid=1034:7600726a451f29b46d39690fd92fc571" target="_blank"><img src="image/川妹子.png" width="50%" class="float2"></a>
+		</div>	
+		<div id="letter"><img src="image/letter.png" width="60%"></div>
+	</div>
+	
+	<div align="center">
+			<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/装饰.gif" width="50%" class="float1">
+			<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/装饰.gif" width="50%" class="float2">
+		</div>
+		<div align="center" id="button">
+			<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/按钮_感谢信.png" width="500px" title="a letter" onclick="letter();" >
+		</div>
+		<div align="center">
+			<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/点击.gif">
+		</div>
+	<section>
+		<div class="bottom">
+			<div class="float1" id="top">
+				<a href="https://weibo.com/3669102477?refer_flag=1001030103_">火速入坑&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+				<a href="https://weibo.com/p/1008086f1b7983ba4fca7456e28317e78127ed/super_index">更多资讯&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+				<a href="http://www.snh48.com/">友情链接&nbsp;&nbsp;|&nbsp;&nbsp; </a>
+				<a href="somewords.html">作者的话</a>
+			</div>
+			<div id="copyright"> Copyright © 2018 JJYDXFS </div>
+		</div>
+		
+	</section>
+	
+</body>
+</html>

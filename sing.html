@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>歌姬</title>
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<script language="javascript">
+
+	
+function ChangeBgm(){
+	var bgsound=document.getElementById("bgm");
+	if(bgsound.paused)
+		bgsound.play();
+	else
+		bgsound.pause();
+
+}	
+function Song1(){
+	document.getElementById('bgm').src="music/traditional/落花成泥.mp3";
+}
+	function Song2(){
+	document.getElementById('bgm').src="music/traditional/叹云兮.mp3";
+}
+	function Song3(){
+	document.getElementById('bgm').src="music/traditional/缘尽世间.mp3";
+}
+	function Song4(){
+	document.getElementById('bgm').src="music/traditional/醉飞霜.mp3";
+}
+	function Song5(){
+	document.getElementById('bgm').src="music/classic/漂洋过海来看你.mp3";
+}
+	function Song6(){
+	document.getElementById('bgm').src="music/classic/女儿情.mp3";
+}
+	function Song7(){
+	document.getElementById('bgm').src="music/classic/离别的车站.mp3";
+}
+	function Song8(){
+	document.getElementById('bgm').src="music/classic/青城山下白素贞.mp3";
+}
+	function Song9(){
+	document.getElementById('bgm').src="music/current/听到请回答.mp3";
+}
+	function Song10(){
+	document.getElementById('bgm').src="music/current/风铃.mp3";
+}
+	function Song11(){
+	document.getElementById('bgm').src="music/current/红豆.mp3";
+}
+	function Song12(){
+	document.getElementById('bgm').src="music/current/遗失的美好.mp3";
+}
+	function Song13(){
+	document.getElementById('bgm').src="music/cute/like l do.mp3";
+}
+	function Song14(){
+	document.getElementById('bgm').src="music/cute/苦与甜.mp3";
+}
+
+function Index(){
+	var main=document.getElementById('mainbody');
+	var btn=document.getElementById('mainbutton');
+	var abtn=btn.getElementsByTagName('img'); 
+	var adiv=main.getElementsByTagName('div');
+	
+	for(var i=0;i<abtn.length;i++)
+	{
+		abtn[i].index=i;
+		abtn[i].onclick=function()
+		{
+			for(var i=0;i<abtn.length;i++)
+			{
+				abtn[i].className='';
+				adiv[i].style.display='none';
+			}
+			this.className='active';
+			adiv[this.index].style.display='block';
+		}
+	}
+}
+</script>
+</head>
+
+<body>
+<audio src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/music/music_bgsound.mp3" id="bgm" autoplay></audio>
+	<section>
+		<div class="head">
+			<div class="headson1" width:100%>
+				<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/人美歌甜.png">
+			</div>
+			<div class="headson2">
+				<a href="index.html" title="鞠骑入坑指南">回到首页&nbsp;|&nbsp;</a>
+				<a href="introduction.html" title="关于小鞠的个人简介">简介&nbsp;|&nbsp;</a>
+				<a href="dance.html" title="全能ACE怎么能不会跳舞？">舞者&nbsp;|&nbsp;</a>
+				<a href="others.html" title="关于小鞠的二三事">其它&nbsp;</a>
+				
+			</div>
+		</div>
+	<div class="fixed">
+			<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/喇叭.png" width="35%" onClick="ChangeBgm();" title="单击以关闭/打开背景音乐">
+		</div>	
+	</section>
+	<section align="center">
+		<div id="mainbutton" align="center" onmousemove="Index()">
+				<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/古风区.png" width="20%"  index="0" class="active">
+				<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/复古区.png" width="20%"  index="1">
+				<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/流行乐.png" width="20%"  index="2">
+				<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/可爱风.png" width="20%"  index="3">
+		</div>
+		<div id="mainbody" align="center">
+			<div style="display: block">
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/歌名标签/落花成泥.png" class="songtag" onClick="Song1();">
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/歌名标签/叹云兮.png" class="songtag" onClick="Song2();">
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/歌名标签/缘尽世间.png" class="songtag" onClick="Song3();">
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/歌名标签/醉飞霜.png" class="songtag" onClick="Song4();">
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/古风.jpg" width="80%">
+			</div>
+				
+			<div>
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/歌名标签/漂洋过海来看你.png" class="songtag" onClick="Song5();">
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/歌名标签/女儿情.png" class="songtag" onClick="Song6();">
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/歌名标签/离别的车站.png" class="songtag" onClick="Song7();">
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/歌名标签/青城山下白素贞.png" class="songtag" onClick="Song8();">
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/复古.gif" width="80%">
+			</div>
+			<div>
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/歌名标签/听到请回答.png" class="songtag" onClick="Song9();">
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/歌名标签/风铃.png" class="songtag" onClick="Song10();">
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/歌名标签/红豆.png" class="songtag" onClick="Song11();">
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/歌名标签/遗失的美好.png" class="songtag" onClick="Song12();">
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/流行.jpg" width="80%">
+			</div>
+			<div>
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/歌名标签/like i do.png" class="songtag" onClick="Song13();">
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/歌名标签/苦与甜.png" class="songtag" onClick="Song14();">
+					<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/可爱.gif" width="80%">
+			</div>
+		</div>
+	</div>
+		<div align="center">
+			<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/装饰.gif" width="50%" class="float1">
+			<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/装饰.gif" width="50%" class="float2">
+		</div>
+		<div align="center" id="button">
+			<a href="dance.html"><img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/按钮_全能ACE.png" width="500px" title="舞台王者"></a>
+		</div>
+		<div align="center">
+			<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/点击.gif">
+		</div>
+	</section>
+	<section>
+		<div class="bottom">
+			<div class="float1" id="top">
+				<a href="https://weibo.com/3669102477?refer_flag=1001030103_">火速入坑&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+				<a href="https://weibo.com/p/1008086f1b7983ba4fca7456e28317e78127ed/super_index">更多资讯&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+				<a href="http://www.snh48.com/">友情链接&nbsp;&nbsp;|&nbsp;&nbsp; </a>
+				<a href="somewords.html">作者的话</a>
+			</div>
+			<div id="copyright"> Copyright © 2018 JJYDXFS </div>
+		</div>
+		
+	</section>
+</body>
+</html>

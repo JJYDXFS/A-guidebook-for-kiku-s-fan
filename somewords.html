@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script language="javascript">
+
+function ChangeBgm(){
+	var bgsound=document.getElementById("bgm");
+	if(bgsound.paused)
+		bgsound.play();
+	else
+		bgsound.pause();
+}
+
+</script>
+</head>
+
+<body>
+
+<audio src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/music/other_bgsound.mp3" id="bgm" autoplay></audio>
+
+<section>
+	<div class="fixed">
+		<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/喇叭.png" width="35%" onClick="ChangeBgm();" title="单击以关闭/打开背景音乐">
+	</div>
+</section>
+
+<div style="width: 75%; margin: auto; margin-top: 10%; line-height: 170%;margin-bottom: 3%;">
+	<h1 style="text-align: center;padding-top: 5%;">作者的话</h1>
+
+	<div>
+		&emsp;&emsp;这是我大一 Web前端开发课程 的结课作业，也是我人生中写的第一个完整网页。期末周中用 <i>Adobe DreamWaver</i> 
+		在宿舍一行一行敲 html 代码的时光依稀在眼前。即使在之后的日子里我也接触了更现代化的开发方式和开发工具，写了看似复杂一些的网页，
+		但这份完全由前端三剑客搭建的毛胚房在我心中仍占据着特殊地位。我想，可能是因为它标志着我告别过去那段属于青春期的“追星时光”，
+		开启了全新的人生阶段。进入大学之后，塞纳河和小鞠渐渐淡出了我的生活。现在的我偶尔会回想起从前看公演总选bx0、专嗑邪门cp、
+		表面dd党实则刻薄聚聚的阴阳人日子。除了尚未被遗忘的记忆，生活中留下的属于过去的痕迹也只剩下几件应援服和压箱底的总选专辑。
+		对了，还有我最常用的昵称：<i>JJYDXFS</i>。初看到这串字母的时候，朋友们都吐槽难以记忆且拗口。其实这只是一个简单的缩写：
+		“鞠婧祎的小粉丝”。起初是图有趣，后来发现这个缩写不易重名且好记，于是就成了我的默认昵称。纪念意义也很足，毕竟鞠老师可是我的首推。
+	</div>
+
+	<div>
+		&emsp;&emsp;说到追星这回事，也有很多人问过我为什么会喜欢小鞠，甚至大家觉得我看上去就不像是会追星的人。
+		虽然我也不清楚大家眼中的我是什么样，会追星的人又该是什么样的......但我确实感激我的生命中有过这样一段经历，使我能站在当局者去理解
+		“追星”这件事。没有追星前的我也曾对追星有偏见，偏激到如果再早几年读到王小波的《明星与癫狂》，我会拍案叫绝而不是质疑他说得太绝对。
+		当然王小波所评论的明星崇拜针对的是他所处的时代，当时的情况或许就该一竿子打死也说不定。不过就我个人追星的体验来说，我认为是利大于弊。
+		舞台上充满活力的小偶像是真的有使人振作的能力，同时小众饭圈粉丝的身份也让我体会宽容看待多元世界的重要性。至于为什么喜欢小鞠，歌舞俱佳且努力的全能ACE咱已经说倦了。
+		以及我最初入坑理由是因为她的歌声：本音饭强烈安利鞠婧祎歌声巨好听！
+	</div>
+
+	<div>
+		&emsp;&emsp;喜欢小鞠的第 <span id = "dayCount"> </span> 天：超绝可爱鞠婧祎，我最喜欢鞠婧祎！
+	</div>
+</div>
+
+<div align="center">
+	<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/装饰.gif"  width="50%" class="float1">
+	<img src="https://jjydxfs.oss-cn-beijing.aliyuncs.com/jjy-guidebook/image/装饰.gif"  width="50%" class="float2">
+</div>
+
+<footer>
+	<div id="copyright"> Copyright © 2018 JJYDXFS </div>
+</footer>
+
+<script>
+
+// @refer: https://blog.csdn.net/xinyi_jin/article/details/88047165
+var dayContainer = document.getElementById("dayCount");
+var today = new Date();
+var special_day = new Date("2016-06-18 00:06:37");
+
+var difftime = (today - special_day)/1000;
+var days = parseInt(difftime/86400);
+
+dayContainer.innerText = String(days);
+
+</script>
+
+</body>
+</html>
