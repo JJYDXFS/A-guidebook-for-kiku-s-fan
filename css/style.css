@@ -31,7 +31,7 @@ body{
 }
 a{
 	color:rgba(0,196,89,1.00);
-	font-size: 30px;
+	font-size: 150%;
 	text-decoration: none;
 }
 a:hover{
@@ -91,16 +91,14 @@ a:hover{
 /* sing.html */
 #mainbody{
 	/* margin: auto; */
-	top:20px;
-	/* height: 1000px; */
+	top:1%;
+	width: 100%;
 	position: relative;
 }
 #mainbutton{
 	position: relative;
-	top:20px;
-}
-button{
-	height: 90px;
+	width: 100%;
+	top:1%;
 }
 #mainbody div{
 	/* margin: auto; */
@@ -115,4 +113,9 @@ button{
 .songtag{
 	width:20%;
 	position: relative;
+}
+#split-hr{
+	border: 0;
+	height: 2%;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
