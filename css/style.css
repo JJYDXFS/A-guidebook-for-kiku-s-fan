@@ -127,3 +127,9 @@ a:hover{
 	height: 2%;
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
+/* 作者的话 */
+.normal{
+	font-size: 100%;
+	color: black;
+	font-weight: bold;
+}
