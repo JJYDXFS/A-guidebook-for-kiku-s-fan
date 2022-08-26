@@ -26,8 +26,8 @@ body{
 	float: right;
 }
 .headson3{
-    margin-right: 2%;
 	float: right;
+	clear: both;
 }
 a{
 	color:rgba(0,196,89,1.00);
@@ -48,7 +48,7 @@ a:hover{
 }
 .bottom{
     width: 100%;
-	margin-top: 3%;
+	bottom: 0;
 	height: 100px;
 	background-color:rgba(73,232,224,0.50);
 }
@@ -75,6 +75,14 @@ a:hover{
 	margin: 10%;
 	margin-top: 5%;
 	/* height:500px; */
+}
+.source{
+	color:rgb(0, 101, 196);
+	font-size: 120%;
+	text-decoration: none;
+}
+.source:hover{
+	color:rgb(0, 180, 200);
 }
 /* others.html */
 #tips{
